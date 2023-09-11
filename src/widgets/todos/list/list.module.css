@@ -1,0 +1,13 @@
+.wrapper {
+  padding: 24px;
+}
+
+.list {
+  display: grid;
+  grid-row-gap: 24px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.item {
+  list-style-type: none;
+}

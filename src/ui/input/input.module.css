@@ -1,0 +1,12 @@
+.wrapper {
+  width: 100%;
+  padding: 12px;
+  border-radius: 100px;
+  background: #FFF;
+  border:1px solid #eded;
+  outline: none;
+}
+
+.wrapper:focus {
+  border:1px solid #000000;
+}
