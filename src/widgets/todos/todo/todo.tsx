@@ -10,14 +10,16 @@ interface TodoPropds {
 
 export const Todo: FC<TodoPropds> = ({ title, completed, onChange }) => {
   return (
-    <label className={style.wrapper}>
-      <input
-        className={style.input}
-        type="checkbox"
-        checked={completed}
-        onChange={onChange}
-      />
-
+    <label className={style.label}>
+      <div>
+        <input
+          className={style.input}
+          type="checkbox"
+          checked={completed}
+          onChange={onChange}
+        />
+        <div className={style.checkbox}></div>
+      </div>
       <div className={style.title}>{title}</div>
     </label>
   );

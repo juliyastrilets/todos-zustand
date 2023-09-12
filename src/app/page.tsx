@@ -5,7 +5,7 @@ import { Filters } from "@/widgets/filters/filters";
 import { Header } from "@/widgets/header/header";
 import { Footer } from "@/widgets/footer/footer";
 import { ListTodos } from "@/widgets/todos/list/list";
-import { NewTodo } from "@/widgets/newTodo/newTodo";
+import { AddTodoForm } from "@/widgets/addTodoForm/addTodoForm";
 import { useTodos } from "@/store/todos";
 
 export default function Home() {
@@ -21,6 +21,13 @@ export default function Home() {
     setValue(event?.target.value);
   };
 
+  const submitHandler = (event: React.FormEvent) => {
+    event.preventDefault();
+    addTodo(value);
+    setNewTodo(false);
+    setValue("");
+  };
+
   return (
     <main className={styles.main}>
       <Header />
@@ -29,11 +36,12 @@ export default function Home() {
         <ListTodos />
         <Footer onClick={() => setNewTodo(true)} />
         {newTodo && (
-          <NewTodo
+          <AddTodoForm
             onClickClose={() => setNewTodo(false)}
             value={value}
             onClick={newAddTodo}
             onChange={handeleChangeInput}
+            onSubmit={submitHandler}
           />
         )}
       </div>

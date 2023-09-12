@@ -1,30 +1,32 @@
 import { Button } from "@/ui/button/button";
-import style from "./newTodo.module.css";
-import { FC, useState } from "react";
+import style from "./addTodoForm.module.css";
+import { FC } from "react";
 import { Input } from "@/ui/input/input";
-import { useTodos } from "@/store/todos";
+import Image from "next/image";
 
-interface NewTodoProps {
+interface AddTodoFormProps {
   onClickClose: (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => void;
   value?: string | number;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
 }
 
-export const NewTodo: FC<NewTodoProps> = ({
+export const AddTodoForm: FC<AddTodoFormProps> = ({
   onClickClose,
   value,
   onChange,
   onClick,
+  onSubmit,
 }) => {
   return (
-    <form className={style.wrapper}>
+    <form className={style.wrapper} onSubmit={onSubmit}>
       <div className={style.header}>
         <h3 className={style.title}>Create new Todo</h3>
         <Button color="transparent" onClick={onClickClose}>
-          <div>X</div>
+          <Image src="/close.svg" alt="icon" width={16} height={16} />
         </Button>
       </div>
       <div className={style.content}>

@@ -19,6 +19,7 @@ export const Button: FC<ButtonProps> = ({
       disabled={disabled}
       className={`${style.wrapper} ${style[color]}`}
       onClick={onClick}
+      type="button"
     >
       {children}
     </button>
