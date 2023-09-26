@@ -32,8 +32,11 @@ export default function Home() {
     <main className={styles.main}>
       <Header />
       <div className={styles.wrapper}>
-        <Filters />
-        <ListTodos />
+        <div className={styles.content}>
+          <Filters />
+          <ListTodos />
+        </div>
+
         <Footer onClick={() => setNewTodo(true)} />
         {newTodo && (
           <AddTodoForm
