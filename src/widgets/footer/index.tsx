@@ -1,5 +1,5 @@
-import { Button } from "@/ui/button/button";
-import style from "./footer.module.css";
+import { Button } from "@/ui/button";
+import style from "./style.module.css";
 import { FC } from "react";
 import { useTodos } from "@/store/todos";
 

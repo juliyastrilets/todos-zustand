@@ -1,5 +1,5 @@
-import { Button } from "@/ui/button/button";
-import style from "./filters.module.css";
+import { Button } from "@/ui/button";
+import style from "./style.module.css";
 import { useFilter } from "@/store/filterTodos";
 
 // interface Filter {

@@ -1,7 +1,7 @@
-import { Button } from "@/ui/button/button";
-import style from "./addTodoForm.module.css";
+import { Button } from "@/ui/button";
+import style from "./style.module.css";
 import { FC } from "react";
-import { Input } from "@/ui/input/input";
+import { Input } from "@/ui/input";
 import Image from "next/image";
 
 interface AddTodoFormProps {

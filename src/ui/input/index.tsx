@@ -1,5 +1,5 @@
 import { FC } from "react";
-import style from "./input.module.css";
+import style from "./style.module.css";
 interface InputProps {
   value?: string | number;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;

@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
-import styles from "./page.module.css";
-import { Filters } from "@/widgets/filters/filters";
-import { Header } from "@/widgets/header/header";
-import { Footer } from "@/widgets/footer/footer";
-import { ListTodos } from "@/widgets/todos/list/list";
-import { AddTodoForm } from "@/widgets/addTodoForm/addTodoForm";
+import styles from "../css/page.module.css";
+import { Filters } from "@/widgets/filters";
+import { Header } from "@/widgets/header";
+import { Footer } from "@/widgets/footer";
+import { ListTodos } from "@/widgets/todos/list";
+import { AddTodoForm } from "@/widgets/addTodoForm";
 import { useTodos } from "@/store/todos";
 
 export default function Home() {

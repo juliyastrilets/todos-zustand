@@ -1,7 +1,7 @@
 "use client";
 import { useTodos } from "@/store/todos";
-import { Todo } from "../todo/todo";
-import style from "./list.module.css";
+import { Todo } from "../todo";
+import style from "./style.module.css";
 import { useFilter } from "@/store/filterTodos";
 
 export const ListTodos = () => {

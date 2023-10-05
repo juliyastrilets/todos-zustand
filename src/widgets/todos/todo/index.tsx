@@ -1,6 +1,5 @@
 import { FC } from "react";
-import style from "./todo.module.css";
-import { useTodos } from "@/store/todos";
+import style from "./style.module.css";
 
 interface TodoPropds {
   title: string;
