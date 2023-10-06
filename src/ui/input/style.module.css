@@ -2,11 +2,12 @@
   width: 100%;
   padding: 12px;
   border-radius: 100px;
-  background: #FFF;
-  border:1px solid #eded;
+  background: #fff;
+  border: 1px solid #eded;
   outline: none;
+  font-size: 14px;
 }
 
 .wrapper:focus {
-  border:1px solid #000000;
+  border: 1px solid #000000;
 }
