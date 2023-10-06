@@ -24,7 +24,7 @@ export const AddTodoForm: FC<AddTodoFormProps> = ({
   return (
     <form className={style.wrapper} onSubmit={onSubmit}>
       <div className={style.header}>
-        <h3 className={style.title}>Create new Todo</h3>
+        <h2 className={style.title}>Create new Todo</h2>
         <Button color="transparent" onClick={onClickClose}>
           <Image src="/close.svg" alt="icon" width={16} height={16} />
         </Button>

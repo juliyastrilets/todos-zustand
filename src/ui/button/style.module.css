@@ -1,30 +1,30 @@
 .wrapper {
   border-radius: 100px;
-  background: #FFF;
+  background: #fff;
   width: 100%;
-  padding: 8px ;
+  padding: 8px;
   border: 1px solid #ededed;
   outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  font-size: 14px;
 }
 
 .warpper.white {
-  background: #FFF;
-  color:#000000
+  background: #fff;
+  color: #000000;
 }
 .wrapper.aqua {
-  background:#50c2c9 ;
-  color: #FFF;
+  background: #50c2c9;
+  color: #fff;
 }
 .wrapper.black {
   background: #000000;
-  color: #FFF;
+  color: #fff;
 }
 
-.wrapper.transparent{
+.wrapper.transparent {
   background: transparent;
   border: none;
   padding: 0;

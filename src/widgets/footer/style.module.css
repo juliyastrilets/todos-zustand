@@ -3,30 +3,29 @@
   bottom: 0;
   left: 0;
   right: 0;
+  padding: 24px;
+  z-index: 1;
+  background: #f0f4f3;
+  border-top: 1px solid #ededed;
+}
+.content {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
-  z-index: 1;
-  background: #F0F4F3;
-  border-top: 1px solid #ededed;
-}
-
-.wrapperText {
-  margin-bottom: 16px;
-  
-}
-.text{
-  color: #000;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.wrapper button {
-  @media (min-width: 1200px){
+  @media (min-width: 1200px) {
     max-width: 200px;
     width: 100%;
     margin: 0 auto;
-  } 
+  }
+}
+
+.wrapperText {
+  margin-bottom: 24px;
+}
+
+.text {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
 }

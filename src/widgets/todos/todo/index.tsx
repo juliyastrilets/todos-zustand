@@ -19,7 +19,7 @@ export const Todo: FC<TodoPropds> = ({ title, completed, onChange }) => {
         />
         <div className={style.checkbox}></div>
       </div>
-      <div className={style.title}>{title}</div>
+      <h3 className={style.title}>{title}</h3>
     </label>
   );
 };

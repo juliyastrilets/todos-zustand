@@ -11,12 +11,14 @@ export const Footer: FC<FooterProps> = ({ onClick }) => {
   const count = useTodos((state) => state.todos.length);
   return (
     <div className={style.wrapper}>
-      <div className={style.wrapperText}>
-        <span className={style.tetx}> Total:{count}</span>
+      <div className={style.content}>
+        <div className={style.wrapperText}>
+          <span className={style.text}> Total:{count}</span>
+        </div>
+        <Button color="aqua" onClick={onClick}>
+          <span>Add new todo </span>
+        </Button>
       </div>
-      <Button color="aqua" onClick={onClick}>
-        <span>Add new todo </span>
-      </Button>
     </div>
   );
 };
