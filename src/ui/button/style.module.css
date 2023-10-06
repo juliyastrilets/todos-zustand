@@ -15,9 +15,15 @@
   background: #fff;
   color: #000000;
 }
+.white:hover {
+  background: #ededed;
+}
 .wrapper.aqua {
   background: #50c2c9;
   color: #fff;
+}
+.aqua:hover {
+  background: #14b8b8;
 }
 .wrapper.black {
   background: #000000;
