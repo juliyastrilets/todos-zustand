@@ -11,7 +11,7 @@ export const Filters = () => {
         <Button
           color="white"
           key={f.id}
-          disabled={filter === 'all'}
+          disabled={f.type === filter}
           onClick={() => setFilter(f.type)}
         >
           <span>{f.title}</span>
