@@ -6,5 +6,5 @@ interface ImageLoaderProps {
 }
 
 export default function imageLoader(props: ImageLoaderProps) {
-  return `/nextjs/${props.src}`;
+  return `/todos-zustand/${props.src}`;
 }
