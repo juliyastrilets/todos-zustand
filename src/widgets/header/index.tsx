@@ -6,7 +6,7 @@ export const Header = () => {
     <div className={style.wrapper}>
       <div className={style.wrapperCircle}>
         <Image
-          src="/circleLeft.svg"
+          src="icons/circleLeft.svg"
           alt="icon"
           width={100}
           height={183}
@@ -14,7 +14,7 @@ export const Header = () => {
       </div>
       <div className={style.wrapperCircle}>
         <Image
-          src="/circleTop.svg"
+          src="icons/circleTop.svg"
           alt="icon"
           width={200}
           height={123}
@@ -22,7 +22,7 @@ export const Header = () => {
       </div>
       <div className={style.wrapperImg}>
         <Image
-          src="/user.jpg"
+          src="img/user.jpg"
           alt="product img"
           width={100}
           height={100}

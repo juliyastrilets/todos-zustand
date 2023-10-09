@@ -27,7 +27,12 @@ export const AddTodoForm = ({
       <div className={style.header}>
         <h2 className={style.title}>Create new Todo</h2>
         <Button color="transparent" onClick={onClickClose}>
-          <Image src="/close.svg" alt="icon" width={16} height={16} />
+          <Image
+            src="icons/close.svg"
+            alt="icon"
+            width={16}
+            height={16}
+          />
         </Button>
       </div>
       <div className={style.content}>
