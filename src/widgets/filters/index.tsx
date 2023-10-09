@@ -1,6 +1,6 @@
-import { Button } from "@/ui/button";
-import style from "./style.module.css";
-import { useFilter } from "@/store/filterTodos";
+import { Button } from '@/ui/button';
+import style from './style.module.css';
+import { useFilter } from '@/store/filterTodos';
 
 // interface Filter {
 //   id: number;
@@ -32,22 +32,22 @@ export const Filters = () => {
       ))} */}
       <Button
         color="white"
-        disabled={filter === "all"}
-        onClick={() => setFilter("all")}
+        disabled={filter === 'all'}
+        onClick={() => setFilter('all')}
       >
         <span>All</span>
       </Button>
       <Button
         color="white"
-        disabled={filter === "uncompleted"}
-        onClick={() => setFilter("uncompleted")}
+        disabled={filter === 'uncompleted'}
+        onClick={() => setFilter('uncompleted')}
       >
         <span>Not completed</span>
       </Button>
       <Button
         color="white"
-        disabled={filter === "completed"}
-        onClick={() => setFilter("completed")}
+        disabled={filter === 'completed'}
+        onClick={() => setFilter('completed')}
       >
         <span>Completed</span>
       </Button>

@@ -1,16 +1,18 @@
-import { Button } from "@/ui/button";
-import style from "./style.module.css";
-import { FC } from "react";
-import { Input } from "@/ui/input";
-import Image from "next/image";
+import { Button } from '@/ui/button';
+import style from './style.module.css';
+import { FC } from 'react';
+import { Input } from '@/ui/input';
+import Image from 'next/image';
 
 interface AddTodoFormProps {
   onClickClose: (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   ) => void;
   value?: string | number;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  onClick: (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  ) => void;
   onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
 }
 

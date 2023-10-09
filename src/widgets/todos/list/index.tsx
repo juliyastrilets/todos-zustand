@@ -1,17 +1,17 @@
-"use client";
-import { useTodos } from "@/store/todos";
-import { Todo } from "../todo";
-import style from "./style.module.css";
-import { useFilter } from "@/store/filterTodos";
+'use client';
+import { useTodos } from '@/store/todos';
+import { Todo } from '../todo';
+import style from './style.module.css';
+import { useFilter } from '@/store/filterTodos';
 
 export const ListTodos = () => {
   const toggleTodo = useTodos((state) => state.toggleTodo);
   const filter = useFilter((state) => state.filter);
   const todos = useTodos((state) => {
     switch (filter) {
-      case "completed":
+      case 'completed':
         return state.todos.filter((todo) => todo.completed);
-      case "uncompleted":
+      case 'uncompleted':
         return state.todos.filter((todo) => !todo.completed);
       default:
         return state.todos;

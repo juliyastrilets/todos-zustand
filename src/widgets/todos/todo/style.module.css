@@ -10,9 +10,8 @@
   background-position: center center;
 }
 
-
 .title {
-  color: rgba(0, 0, 0, 0.70);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 16px;
   font-weight: 600;
 }
@@ -25,7 +24,6 @@
   position: absolute;
   left: 0;
   opacity: 0;
-
 }
 .checkbox {
   width: 24px;
@@ -34,5 +32,4 @@
   background: transparent;
   border-radius: 4px;
   margin-right: 24px;
-
 }

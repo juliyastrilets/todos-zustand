@@ -1,9 +1,11 @@
-import { FC } from "react";
-import style from "./style.module.css";
+import { FC } from 'react';
+import style from './style.module.css';
 
 interface ButtonProps {
   children: string | JSX.Element | JSX.Element[];
-  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  onClick?: (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  ) => void;
   color: string;
   disabled?: any;
 }

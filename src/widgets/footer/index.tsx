@@ -1,10 +1,12 @@
-import { Button } from "@/ui/button";
-import style from "./style.module.css";
-import { FC } from "react";
-import { useTodos } from "@/store/todos";
+import { Button } from '@/ui/button';
+import style from './style.module.css';
+import { FC } from 'react';
+import { useTodos } from '@/store/todos';
 
 interface FooterProps {
-  onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  onClick: (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  ) => void;
 }
 
 export const Footer: FC<FooterProps> = ({ onClick }) => {

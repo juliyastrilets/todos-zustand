@@ -13,7 +13,6 @@
 }
 
 .label {
-
 }
 
 .label input:checked + div {
@@ -29,5 +28,4 @@
   border: 1px solid gray;
   background: transparent;
   border-radius: 4px;
-
 }

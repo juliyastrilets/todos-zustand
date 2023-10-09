@@ -1,4 +1,4 @@
-import { create } from "zustand";
+import { create } from 'zustand';
 
 interface FilterState {
   filter: any;
@@ -6,6 +6,6 @@ interface FilterState {
 }
 
 export const useFilter = create<FilterState>((set) => ({
-  filter: "all",
+  filter: 'all',
   setFilter: (value: string) => set({ filter: value }),
 }));
