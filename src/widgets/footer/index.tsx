@@ -1,6 +1,5 @@
-import { Button } from '@/ui/button';
 import style from './style.module.css';
-import { FC } from 'react';
+import { Button } from '@/ui/button';
 import { useTodos } from '@/store/todos';
 
 interface FooterProps {
@@ -9,7 +8,7 @@ interface FooterProps {
   ) => void;
 }
 
-export const Footer: FC<FooterProps> = ({ onClick }) => {
+export const Footer = ({ onClick }: FooterProps) => {
   const count = useTodos((state) => state.todos.length);
   return (
     <div className={style.wrapper}>

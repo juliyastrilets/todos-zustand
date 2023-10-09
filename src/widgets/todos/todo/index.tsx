@@ -1,17 +1,12 @@
-import { FC } from 'react';
 import style from './style.module.css';
 
-interface TodoPropds {
+interface TodoProps {
   title: string;
   completed: boolean;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const Todo: FC<TodoPropds> = ({
-  title,
-  completed,
-  onChange,
-}) => {
+export const Todo = ({ title, completed, onChange }: TodoProps) => {
   return (
     <label className={style.label}>
       <div>

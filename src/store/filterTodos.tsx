@@ -1,8 +1,8 @@
 import { create } from 'zustand';
 
 interface FilterState {
-  filter: any;
-  setFilter: any;
+  filter: string;
+  setFilter: (value: string) => void;
 }
 
 export const useFilter = create<FilterState>((set) => ({

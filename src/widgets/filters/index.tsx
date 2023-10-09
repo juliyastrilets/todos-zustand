@@ -1,56 +1,22 @@
-import { Button } from '@/ui/button';
 import style from './style.module.css';
+import { Button } from '@/ui/button';
 import { useFilter } from '@/store/filterTodos';
-
-// interface Filter {
-//   id: number;
-//   title: string;
-// }
-// const filters: Filter[] = [
-//   {
-//     id: 1,
-//     title: "All",
-//   },
-//   {
-//     id: 2,
-//     title: "Not completed",
-//   },
-//   {
-//     id: 3,
-//     title: "Completed",
-//   },
-// ];
+import { filters } from './model';
 
 export const Filters = () => {
   const { filter, setFilter } = useFilter();
   return (
     <div className={style.wrapper}>
-      {/* {filters.map((filter) => (
-        <Button color="white" key={filter.id} disabled={filter === 'all'}>
-          <span>{filter.title}</span>
+      {filters.map((f) => (
+        <Button
+          color="white"
+          key={f.id}
+          disabled={filter === 'all'}
+          onClick={() => setFilter(f.type)}
+        >
+          <span>{f.title}</span>
         </Button>
-      ))} */}
-      <Button
-        color="white"
-        disabled={filter === 'all'}
-        onClick={() => setFilter('all')}
-      >
-        <span>All</span>
-      </Button>
-      <Button
-        color="white"
-        disabled={filter === 'uncompleted'}
-        onClick={() => setFilter('uncompleted')}
-      >
-        <span>Not completed</span>
-      </Button>
-      <Button
-        color="white"
-        disabled={filter === 'completed'}
-        onClick={() => setFilter('completed')}
-      >
-        <span>Completed</span>
-      </Button>
+      ))}
     </div>
   );
 };

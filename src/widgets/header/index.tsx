@@ -1,5 +1,6 @@
-import Image from 'next/image';
 import style from './style.module.css';
+import Image from 'next/image';
+
 export const Header = () => {
   return (
     <div className={style.wrapper}>

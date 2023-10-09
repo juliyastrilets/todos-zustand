@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import style from './style.module.css';
 
 interface ButtonProps {
@@ -10,12 +9,12 @@ interface ButtonProps {
   disabled?: any;
 }
 
-export const Button: FC<ButtonProps> = ({
+export const Button = ({
   children,
   onClick,
   color,
   disabled,
-}) => {
+}: ButtonProps) => {
   return (
     <button
       disabled={disabled}

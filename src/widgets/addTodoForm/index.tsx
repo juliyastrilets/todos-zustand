@@ -1,6 +1,5 @@
-import { Button } from '@/ui/button';
 import style from './style.module.css';
-import { FC } from 'react';
+import { Button } from '@/ui/button';
 import { Input } from '@/ui/input';
 import Image from 'next/image';
 
@@ -16,13 +15,13 @@ interface AddTodoFormProps {
   onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
 }
 
-export const AddTodoForm: FC<AddTodoFormProps> = ({
+export const AddTodoForm = ({
   onClickClose,
   value,
   onChange,
   onClick,
   onSubmit,
-}) => {
+}: AddTodoFormProps) => {
   return (
     <form className={style.wrapper} onSubmit={onSubmit}>
       <div className={style.header}>
