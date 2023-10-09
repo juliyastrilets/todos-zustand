@@ -5,7 +5,7 @@
 }
 .label input:checked + div {
   background: #50c2c9;
-  background-image: url(/check.svg);
+  background-image: url(/todos-zustand/check.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
