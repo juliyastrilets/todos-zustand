@@ -1,18 +1,27 @@
 .wrapper {
-  background: #50c2c9;
-  height: 380px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+  padding: 24px;
+  background: #50c2c9;
   position: relative;
+
+  @media (min-width: 1200px) {
+    height: 380px;
+  }
 }
 
 .wrapperCircle {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .wrapperImg {

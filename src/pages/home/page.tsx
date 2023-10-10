@@ -33,22 +33,20 @@ export default function HomePage() {
   return (
     <main className={styles.main}>
       <Header />
-      <div className={styles.wrapper}>
-        <div className={styles.content}>
-          <Filters />
-          <ListTodos />
-        </div>
-        <Footer onClick={() => setNewTodo(true)} />
-        {newTodo && (
-          <AddTodoForm
-            onClickClose={() => setNewTodo(false)}
-            value={value}
-            onClick={newAddTodo}
-            onChange={handleChangeInput}
-            onSubmit={submitHandler}
-          />
-        )}
+      <div className={styles.content}>
+        <Filters />
+        <ListTodos />
       </div>
+      <Footer onClick={() => setNewTodo(true)} />
+      {newTodo && (
+        <AddTodoForm
+          onClickClose={() => setNewTodo(false)}
+          value={value}
+          onClick={newAddTodo}
+          onChange={handleChangeInput}
+          onSubmit={submitHandler}
+        />
+      )}
     </main>
   );
 }
