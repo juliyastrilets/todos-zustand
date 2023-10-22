@@ -1,13 +1,11 @@
 import { create } from 'zustand';
 
-type Filter = 'all' | 'uncompleted' | 'completed';
-
 interface FilterState {
-  filter: Filter;
-  setFilter: (value: Filter) => void;
+  filter: string;
+  setFilter: (value: string) => void;
 }
 
 export const useFilter = create<FilterState>((set) => ({
   filter: 'all',
-  setFilter: (value: Filter) => set({ filter: value }),
+  setFilter: (value: string) => set({ filter: value }),
 }));
