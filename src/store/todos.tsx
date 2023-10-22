@@ -1,13 +1,13 @@
 import { create } from 'zustand';
 
-interface ITodos {
+interface Todo {
   id: number;
   title: string;
   completed: boolean;
 }
 
 interface TodosState {
-  todos: ITodos[];
+  todos: Todo[];
   addTodos: (title: string) => void;
   toggleTodo: (id: number) => void;
 }
@@ -17,8 +17,6 @@ export const useTodos = create<TodosState>((set, get) => ({
     { id: 1, title: ' Learn JS', completed: true },
     { id: 2, title: ' Learn React', completed: false },
   ],
-  loading: false,
-  error: null,
   addTodos: (title: string) =>
     set((state) => {
       const newTodo = {
