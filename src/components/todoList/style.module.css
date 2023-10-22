@@ -1,21 +1,13 @@
-.wrapper {
-  padding: 24px 24px 150px;
-}
-
 .list {
   display: grid;
-  grid-row-gap: 24px;
-  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 12px;
 }
 
 .item {
   list-style-type: none;
 }
 
-.label {
-}
-
-.label input:checked + div {
+/* .label input:checked + div {
   background: #50c2c9;
   background-image: url(/check.svg);
   background-repeat: no-repeat;
@@ -28,4 +20,4 @@
   border: 1px solid gray;
   background: transparent;
   border-radius: 4px;
-}
+} */

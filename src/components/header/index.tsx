@@ -28,7 +28,7 @@ export const Header = () => {
           height={100}
         />
       </div>
-      <h1 className={style.title}> Welcome Yulia Strilets !</h1>
+      <h1 className={style.title}>Todo list example with Zustand</h1>
     </div>
   );
 };

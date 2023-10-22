@@ -1,15 +1,13 @@
-.main {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
 .content {
+  padding: 24px 12px;
+
   @media (min-width: 1200px) {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
   }
+}
+
+.addForm {
+  margin-bottom: 24px;
 }

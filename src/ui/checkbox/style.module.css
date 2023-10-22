@@ -1,0 +1,22 @@
+.checkbox {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #eded;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.checkbox:hover {
+  border-color: #50c2c9;
+}
+.checkbox input {
+  width: 0;
+  height: 0;
+}
+.checkboxChecked {
+  background: #50c2c9;
+  border-color: #50c2c9;
+  background-image: url(/todos-zustand/icons/check.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}

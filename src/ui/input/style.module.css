@@ -1,4 +1,4 @@
-.wrapper {
+.input {
   width: 100%;
   padding: 12px;
   border-radius: 100px;
@@ -8,6 +8,6 @@
   font-size: 14px;
 }
 
-.wrapper:focus {
-  border: 1px solid #000000;
+.input:focus {
+  border: 1px solid #50c2c9;
 }

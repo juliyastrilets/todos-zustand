@@ -1,0 +1,23 @@
+.todo {
+  display: flex;
+  gap: 8px;
+}
+
+.checkbox {
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.titleDefault {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.titleCompleted {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.5);
+}
