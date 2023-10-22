@@ -1,37 +1,24 @@
-.wrapper {
-  border-radius: 100px;
-  background: #fff;
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ededed;
-  outline: none;
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
+  border-radius: 100px;
+  padding: 8px;
+  border: 1px solid;
 }
 
-.warpper.white {
+.button:not(:disabled) {
+  cursor: pointer;
+}
+
+.default {
   background: #fff;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.7);
+  border-color: #ededed;
 }
-.white:hover {
-  background: #ededed;
-}
-.wrapper.aqua {
+.primary {
   background: #50c2c9;
   color: #fff;
-}
-.aqua:hover {
-  background: #14b8b8;
-}
-.wrapper.black {
-  background: #000000;
-  color: #fff;
-}
-
-.wrapper.transparent {
-  background: transparent;
-  border: none;
-  padding: 0;
+  border: 1px solid #ededed;
 }

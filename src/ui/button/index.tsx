@@ -1,26 +1,21 @@
+import React from 'react';
 import style from './style.module.css';
 
-interface ButtonProps {
+interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: string | JSX.Element | JSX.Element[];
-  onClick?: (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-  ) => void;
-  color: string;
-  disabled?: any;
+  kind: 'primary' | 'default';
 }
 
 export const Button = ({
   children,
-  onClick,
-  color,
-  disabled,
+  kind,
+  ...extendProps
 }: ButtonProps) => {
   return (
     <button
-      disabled={disabled}
-      className={`${style.wrapper} ${style[color]}`}
-      onClick={onClick}
-      type="button"
+      {...extendProps}
+      className={`${style.button} ${style[kind]}`}
     >
       {children}
     </button>

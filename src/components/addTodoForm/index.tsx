@@ -1,4 +1,4 @@
-import style from './style.module.css';
+'use client';
 import { useState } from 'react';
 import { useTodos } from '@/store/todos';
 import { Input } from '@/ui/input';
@@ -27,7 +27,7 @@ export const AddTodoForm = ({}: AddTodoFormProps) => {
         value={inputValue}
         onChange={handleChange}
         type="text"
-        placeholder="Enter text and press enter"
+        placeholder="Write text and press enter"
       />
     </form>
   );

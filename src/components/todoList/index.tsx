@@ -1,3 +1,4 @@
+'use client';
 import style from './style.module.css';
 import { useFilter } from '@/store/filterTodos';
 import { useTodos } from '@/store/todos';
